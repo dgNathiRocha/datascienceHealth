@@ -101,6 +101,9 @@ Then finally we used test images to predict the correct class which we got accur
 This confusion matrix display the amount of images that the model can predict their classes correct and incorrect, we can see that both class have half way more than incorrect prediction which could consider as a good result since the model was crafted from scratch.
 
 <img src="images/output2.png">
+<img src="images/output3.png">
+<img src="images/output4.png">
+
 Lastly, we displayed the images for each class that was predicted correctly and incorrectly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
