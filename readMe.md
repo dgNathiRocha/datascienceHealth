@@ -18,21 +18,15 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  
+  <a href="">
     <img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
-  
+  </a>
 
 <h3 align="center">Data Science in Health project (Oral Cancer image classification)</h3>
 
@@ -77,11 +71,37 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]]
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+In this section, we create a function for transforming all of images by resizing to 224x224 pixels, converting to grayscale, converting image to pytorch tensor, and making GaussianBlur into the images.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+
+The dataset contains 2 types of patience including normal and squamous cell carcinoma. We split both of them into 2 folders which are train and test set with 30% on the test set. Then we also split data again into train and validation set with the selection of 30%.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+This will be an example of the images that applied transforming into them.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+This is our test CNN model that was applied for training.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+Now we calculate validation loss by using cross-entropy function, SGD as optimizer, and lr scheduler for reducing learning rate. In our project, we got the best validation loss as 0.589 and train loss as 0.3039.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+After we got the result of the loss for train and validation set, we now can plot the loss and the learning rate with log scale.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+Then finally we used test images to predict the correct class which we got accuracy of the network on the test images at 68%.
+
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+This confusion matrix display the amount of images that the model can predict their classes correct and incorrect, we can see that both class have half way more than incorrect prediction which could consider as a good result since the model was crafted from scratch.
+
+<img src="images/HiRes-7.jpeg" alt="Logo" width="80" height="80">
+Lastly, we displayed the images for each class that was predicted correctly and incorrectly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
@@ -106,6 +126,13 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
+2. Install all libraries
+ - Matplotlib
+ - Torch
+ - Time
+ - Numpy
+ - SkLearn
+ - Torvhvision
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
