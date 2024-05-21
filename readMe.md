@@ -71,13 +71,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/first.png" alt="Logo" width="80" height="80">
+<img src="images/first.png">
 
 In this section, we create a function for transforming all of images by resizing to 224x224 pixels, converting to grayscale, converting image to pytorch tensor, and making GaussianBlur into the images.
 
 <img src="images/2nd.png" >
 <img src="images/2nd2.png" >
-<img src="images/2nd3.png" >
+<img src="images/2nd3.png" width="100" height="200" >
 The dataset contains 2 types of patience including normal and squamous cell carcinoma. We split both of them into 2 folders which are train and test set with 30% on the test set. Then we also split data again into train and validation set with the selection of 30%.
 
 <img src="images/third.png"  width="80" height="80">
