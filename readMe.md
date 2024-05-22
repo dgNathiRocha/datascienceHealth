@@ -24,7 +24,6 @@
 
 
 
-[![Product Name Screen Shot][product-screenshot]]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
