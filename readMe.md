@@ -114,9 +114,7 @@ Lastly, we displayed the images for each class that was predicted correctly and 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This project aim to classify accurate as much as possible but in the end, the crucial part is about understanding the process of the workflow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
