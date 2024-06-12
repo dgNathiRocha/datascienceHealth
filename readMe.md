@@ -76,7 +76,7 @@ Now we splitted data into train and and validation set randomly from 70% train s
 
 ---
 
-<img src="images/2nd3.png" width="800" height="400">
+<img src="images/2nd3.png" width="550" height="400">
 
 
 <img src="images/third.png">
