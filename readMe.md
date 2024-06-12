@@ -46,7 +46,7 @@ From the images, we can see that the normal sample shows a small size of epithel
 
 
 
-<!-- Walk through the code  -->
+
 <img src="images/first.png">
 
 In this section, we create a function for transforming all of images by resizing to 224x224 pixels, converting to grayscale, converting image to pytorch tensor, and making GaussianBlur into the images.
