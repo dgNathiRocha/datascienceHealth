@@ -83,7 +83,7 @@ We now check the distribution of the classes in the original dataset. We can see
 
 This will be an example of the image.
 
-<img src="images/normalexample.png">
+<img src="images/normalexample.png" width="300" height="300">
 
 --- 
 
