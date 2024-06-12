@@ -76,15 +76,75 @@ Now we splitted data into train and and validation set randomly from 70% train s
 
 ---
 
+We now check the distribution of the classes in the original dataset. We can see that they have same amount of images for both classes. So we decided not to do under/oversampling in this case.
 <img src="images/2nd3.png" width="550" height="400">
 
+---
 
-<img src="images/third.png">
-This will be an example of the images that applied transforming into them.
+This will be an example of the image.
 
-<img src="images/fifth.png">
-This is our test CNN model that was applied for training.
+<img src="images/normalexample.png">
 
+--- 
+
+Below is our implemented CNN model that was applied for training.
+```
+import torch.nn as nn # basic building block for neural neteorks
+import torch.nn.functional as F # import convolution functions like Relu
+
+class testmodel(nn.Module):
+
+  def __init__(self, num_classes=2):
+    super(testmodel, self).__init__()
+
+       # convolutional layer 1 & max pool layer 1
+    self.layer1 = nn.Sequential(
+        nn.Conv2d(3, 32, kernel_size=3),
+        nn.ReLU(),
+        nn.MaxPool2d(kernel_size=2))
+
+    # convolutional layer 2 & max pool layer 2
+    self.layer2 = nn.Sequential(
+        nn.Conv2d(32, 64, kernel_size=4),
+        nn.ReLU(),
+        nn.MaxPool2d(kernel_size=2),
+        nn.Dropout(0.2))
+
+    self.layer3 = nn.Sequential(
+        nn.Conv2d(64, 128, kernel_size=4),
+        nn.ReLU(),
+        nn.MaxPool2d(kernel_size=2),
+        nn.Dropout(0.2))
+
+    self.layer4 = nn.Sequential(
+        nn.Conv2d(128, 256, kernel_size=4),
+        nn.ReLU(),
+        nn.MaxPool2d(kernel_size=2),
+        nn.Dropout(0.2))
+
+    self.layer5 = nn.Sequential(
+        nn.Conv2d(256, 256, kernel_size=4),
+        nn.ReLU(),
+        nn.MaxPool2d(kernel_size=2),
+        nn.Dropout(0.2))
+
+
+    #Fully connected layer
+    self.fc = nn.Sequential(
+        nn.Linear(256*4*4, num_classes),
+
+    )
+  # Feed forward the network
+  def forward(self, x):
+      out = self.layer1(x)
+      out = self.layer2(out)
+      out = self.layer3(out)
+      out = self.layer4(out)
+      out = self.layer5(out)
+      out = out.reshape(out.size(0), -1)
+      out = self.fc(out)
+      return out
+```
 <img src="images/sixth.png">
 Now we calculate validation loss by using cross-entropy function, SGD as optimizer, and lr scheduler for reducing learning rate. In our project, we got the best validation loss as 0.589 and train loss as 0.3039.
 
