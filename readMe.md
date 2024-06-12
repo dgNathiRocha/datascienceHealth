@@ -42,7 +42,7 @@
 </table>
 
 
-### From the images, we can see that the normal sample shows a small size of epithelium, whereas the OSCC sample shows large size of squamous epithelium.
+From the images, we can see that the normal sample shows a small size of epithelium, whereas the OSCC sample shows large size of squamous epithelium.
 
 
 
