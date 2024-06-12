@@ -178,7 +178,8 @@ The learning rate schedule graph shows the adjustment strategy used during train
 Then finally we used test images to predict the correct class which we got accuracy of the network on the test images at 79%.
 
 This confusion matrix display the amount of images that the model can predict their classes correct and incorrect, we can see that both class have half way more than incorrect prediction which could consider as a good result since the model was crafted from scratch.
-<img src="images/confusionma.png" width="300" height="300">
+
+<img src="images/confusionma.png" width="500" height="500">
 
 ---
 
