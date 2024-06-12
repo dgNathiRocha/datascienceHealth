@@ -28,12 +28,18 @@
 ## About The Project
 
 ### Oral cancer is causes from tobacco and alcohol consumption. Other risk factors can include: human papillomavirus (HPV) epstein-barr virus (EBV). It can occur in all part of your mouth. There is a cell called squamous cell carcinoma(SCC) which is a type of skin cancer that can grow large or spread to other parts of the body. Below will be an example images of normal cell and SCC cell:
-<img src="Oral Cancer/Normal/oral_normal_0008.jpg"  width="300" height="300">
-Normal cell 
-<img src="Oral Cancer/Squamous Cell Carcinoma/oral_scc_0024.jpg"  width="300" height="300">
-Squamous Cell Carcinoma
+<p align="center">
+  <img src="Oral Cancer/Normal/oral_normal_0008.jpg" width="300" height="300">
+  <br>
+  Normal cell
+</p>
+<p align="center">
+  <img src="Oral Cancer/Squamous Cell Carcinoma/oral_scc_0024.jpg" width="300" height="300">
+  <br>
+  Squamous Cell Carcinoma
+</p>
 
-
+### From the images, we can see that the normal sample shows a small size of epithelium, whereas the OSCC sample shows large size of squamous epithelium.
 
 
 
