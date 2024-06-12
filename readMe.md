@@ -27,6 +27,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+### Oral cancer is causes from tobacco and alcohol consumption. Other risk factors can include: human papillomavirus (HPV) epstein-barr virus (EBV). It can occur in all part of your mouth. There is a cell called squamous cell carcinoma(SCC) which is a type of skin cancer that can grow large or spread to other parts of the body. Below will be an example images of normal cell and SCC cell:
+<img src="Oral Cancer/Normal/oral_normal_0008.jpg">
+Normal cell 
+<img src="Oral Cancer/Squamous Cell Carcinoma/oral_scc_0024.jpg">
+Squamous Cell Carcinoma
+
+
+
+
+
 <img src="images/first.png">
 
 In this section, we create a function for transforming all of images by resizing to 224x224 pixels, converting to grayscale, converting image to pytorch tensor, and making GaussianBlur into the images.
@@ -34,7 +44,7 @@ In this section, we create a function for transforming all of images by resizing
 <img src="images/2nd.png">
 <img src="images/2nd2.png">
 <img src="images/2nd3.png" width="800" height="400">
-The dataset contains 2 types of patience including normal and squamous cell carcinoma. We split both of them into 2 folders which are train and test set with 30% on the test set. Then we also split data again into train and validation set with the selection of 30%.
+The dataset contains 2 types of patience including normal and squamous cell carcinoma(SCC). We split both of them into 2 folders which are train and test set with 30% on the test set. Then we also split data again into train and validation set with the selection of 30%.
 
 <img src="images/third.png">
 This will be an example of the images that applied transforming into them.
