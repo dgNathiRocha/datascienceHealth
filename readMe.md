@@ -48,10 +48,20 @@ From the images, we can see that the normal sample shows a small size of epithel
 
 <!-- Walk through the code  -->
 ## Walk through the code
+We firstly splitted into 70% of train set and 30% of train set for both classes.
+```! pip install python_splitter
+import python_splitter
+python_splitter.split_from_folder("/tmp/Oral Cancer", train=0.7, test=0.3)
+   ```
 
-<img src="images/first.png">
+Then we create a function for transforming all of images by resizing to 224x224 pixels, and converting image to pytorch tensor.
+```img_dim = 224
+image_transform = torchvision.transforms.Compose([
+    torchvision.transforms.Resize((img_dim, img_dim)), # Resize the image to 224x224
+    torchvision.transforms.ToTensor() # Convert the image to a pytorch tensor
+])
+```
 
-In this section, we create a function for transforming all of images by resizing to 224x224 pixels, converting to grayscale, converting image to pytorch tensor, and making GaussianBlur into the images.
 
 <img src="images/2nd.png">
 <img src="images/2nd2.png">
