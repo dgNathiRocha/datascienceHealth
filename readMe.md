@@ -53,6 +53,7 @@ We firstly splitted into 70% of train set and 30% of train set for both classes.
 import python_splitter
 python_splitter.split_from_folder("/tmp/Oral Cancer", train=0.7, test=0.3)
    ```
+--- 
 
 Then we create a function for transforming all of images by resizing to 224x224 pixels, and converting image to pytorch tensor.
 ```img_dim = 224
@@ -61,6 +62,9 @@ image_transform = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor() # Convert the image to a pytorch tensor
 ])
 ```
+
+---
+
 After that we check the number of samples in the train and test dataset which there are 7000 images in the train set and 3002 images in the test set.
 <img src="images/2nd.png">
 
