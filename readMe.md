@@ -89,7 +89,7 @@ This will be an example of the image.
 
 Below is our implemented CNN model that was applied for training.
 ```
-import torch.nn as nn # basic building block for neural neteorks
+import torch.nn as nn # basic building block for neural networks
 import torch.nn.functional as F # import convolution functions like Relu
 
 class testmodel(nn.Module):
@@ -145,25 +145,49 @@ class testmodel(nn.Module):
       out = self.fc(out)
       return out
 ```
-<img src="images/sixth.png">
-Now we calculate validation loss by using cross-entropy function, SGD as optimizer, and lr scheduler for reducing learning rate. In our project, we got the best validation loss as 0.589 and train loss as 0.3039.
 
-<img src="images/seventh.png">
-<img src="images/seventh2.png">
+---
 
-After we got the result of the loss for train and validation set, we now can plot the loss and the learning rate with log scale.
+Now we calculate validation loss by using cross-entropy function, SGD as optimizer, and lr scheduler for reducing learning rate. In our project, we got the best validation loss as 0.44 and train loss as 0.26.
+<img src="images/epochim.png">
+
+---
+
+### Training and Validation Loss
+
+The graph illustrates the training and validation loss over 50 epochs. Key observations are:
+
+- **Training Loss** decreases steadily, reflecting the model's improving performance on the training dataset.
+- **Validation Loss** initially fluctuates and stabilizes after 20 epochs, with the best model marked at epoch 43, beyond which slight overfitting is observed.
+- The red dashed line denotes the epoch where the best model (lowest validation loss) was identified.
+
+<img src="images/graphloss_im.png">
 
 
-<img src="images/output.png">
-Then finally we used test images to predict the correct class which we got accuracy of the network on the test images at 68%.
+### Learning Rate Schedule
+
+The learning rate schedule graph shows the adjustment strategy used during training:
+
+- The learning rate starts at above \(10^{-3}\) and is systematically reduced at certain epochs.
+- This stepwise reduction strategy helps in fine-tuning the model as training progresses, with the final learning rate reaching \(10^{-8}\).
+
+<img src="images/loss_im.png">
+
+--- 
+
+Then finally we used test images to predict the correct class which we got accuracy of the network on the test images at 79%.
 
 This confusion matrix display the amount of images that the model can predict their classes correct and incorrect, we can see that both class have half way more than incorrect prediction which could consider as a good result since the model was crafted from scratch.
+<img src="images/confusionma.png" width="300" height="300">
 
-<img src="images/output2.png">
-<img src="images/output3.png">
-<img src="images/output4.png">
+---
 
 Lastly, we displayed the images for each class that was predicted correctly and incorrectly.
+
+
+<img src="images/predictphoto.png">
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
