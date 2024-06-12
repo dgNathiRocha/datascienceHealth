@@ -61,12 +61,19 @@ image_transform = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor() # Convert the image to a pytorch tensor
 ])
 ```
-
-
+After that we check the number of samples in the train and test dataset which there are 7000 images in the train set and 3002 images in the test set.
 <img src="images/2nd.png">
+
+---
+
+Now we splitted data into train and and validation set randomly from 70% train set that we already splitted. We will have 4900 images in the new train set, 2100 images in the validation set, and 3002 images in the test set.
+
 <img src="images/2nd2.png">
+
+---
+
 <img src="images/2nd3.png" width="800" height="400">
-The dataset contains 2 types of patience including normal and squamous cell carcinoma(SCC). We split both of them into 2 folders which are train and test set with 30% on the test set. Then we also split data again into train and validation set with the selection of 30%.
+
 
 <img src="images/third.png">
 This will be an example of the images that applied transforming into them.
