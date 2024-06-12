@@ -149,7 +149,7 @@ class testmodel(nn.Module):
 ---
 
 Now we calculate validation loss by using cross-entropy function, SGD as optimizer, and lr scheduler for reducing learning rate. In our project, we got the best validation loss as 0.44 and train loss as 0.26.
-<img src="images/epochim.png">
+<img src="images/epochim.png" width="400" height="400">
 
 ---
 
@@ -161,7 +161,7 @@ The graph illustrates the training and validation loss over 50 epochs. Key obser
 - **Validation Loss** initially fluctuates and stabilizes after 20 epochs, with the best model marked at epoch 43, beyond which slight overfitting is observed.
 - The red dashed line denotes the epoch where the best model (lowest validation loss) was identified.
 
-<img src="images/graphloss_im.png">
+<img src="images/graphloss_im.png" width="400" height="400">
 
 
 ### Learning Rate Schedule
