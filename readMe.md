@@ -14,7 +14,7 @@
 <h3 align="center">Data Science in Health project (Oral Cancer image classification)</h3>
 
   <p align="center">
-    This project is about classify oral cancer by using image classification with various techniques and implementing our own CNN model.
+    This project is about classify oral cancer by using image classification with various techniques and implementing our own CNN model. The final files that we used for describing the information are "oralcancer_final.ipynb" & "oralcancer_final".ipynb.
     <br />
     
   </p>
@@ -174,19 +174,45 @@ The learning rate schedule graph shows the adjustment strategy used during train
 <img src="images/loss_im.png" width="500" height="400">
 
 --- 
-
+### Confusion Matrix (Implemeted model)
 Then finally we used test images to predict the correct class which we got accuracy of the network on the test images at 79%.
 
 This confusion matrix display the amount of images that the model can predict their classes correct and incorrect, we can see that both class have half way more than incorrect prediction which could consider as a good result since the model was crafted from scratch.
-<td align="center">
+
   <img src="images/confusionma.png" width="500" height="500">
-</td>
+
 ---
 
 Lastly, we displayed the images for each class that was predicted correctly and incorrectly.
 
 
 <img src="images/predictphoto.png" >
+
+---
+
+### Compare with ImageNet
+
+We also additionally did the image classification by using ImageNet as a based model. We did all the processes the same as we did with the implemented model. Here are some example of graphs that show the performance of ImageNet in image classification.
+
+
+## Training and Validation Loss
+
+The graph below illustrates the training and validation loss over 50 epochs.
+
+<img src="images/epochimgnet.png" >
+
+Key observations are:
+
+- **Training Loss** remains almost constant throughout the epochs, indicating no significant learning or improvement on the training data.
+- **Validation Loss** also remains almost constant and overlaps with the training loss, suggesting no improvement in the model's generalization ability.
+- The red dashed line at epoch 19 marks the point where the best model was identified, but given the constant nature of the loss curves, this selection is arbitrary.
+
+---
+
+## Confusion Matrix (ImageNet)
+We used test images to predict the correct class which we got accuracy of the network on the test images just only 49% which might due to different factors such as learning rate, complexity of the model.
+
+<img src="images/cfmimgnet.png" >
 
 
 
