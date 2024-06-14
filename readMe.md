@@ -212,7 +212,7 @@ Key observations are:
 ## Confusion Matrix (ImageNet)
 We used test images to predict the correct class which we got accuracy of the network on the test images just only 49% which might due to different factors such as learning rate, complexity of the model.
 
-<img src="images/cfmimgnet.png" >
+<img src="images/cfmimgnet.png" width="500" height="500">
 
 
 
