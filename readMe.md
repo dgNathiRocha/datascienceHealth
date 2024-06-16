@@ -231,8 +231,8 @@ We used test images to predict the correct class which we got accuracy of the ne
  - Torch
  - Time
  - Numpy
- - SkLearn
- - Torvhvision
+ - SKLearn
+ - Torchvision
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
