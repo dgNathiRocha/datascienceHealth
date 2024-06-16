@@ -190,12 +190,12 @@ Lastly, we displayed the images for each class that was predicted correctly and 
 
 ---
 
-### Compare with ImageNet
+## Compare with ImageNet
 
 We also additionally did the image classification by using ImageNet as a based model. We did all the processes the same as we did with the implemented model. Here are some example of graphs that show the performance of ImageNet in image classification.
 
 
-## Training and Validation Loss
+### Training and Validation Loss
 
 The graph below illustrates the training and validation loss over 50 epochs.
 
@@ -209,7 +209,7 @@ Key observations are:
 
 ---
 
-## Confusion Matrix (ImageNet)
+### Confusion Matrix (ImageNet)
 We used test images to predict the correct class which we got accuracy of the network on the test images just only 49% which might due to different factors such as learning rate, complexity of the model.
 
 <img src="images/cfmimgnet.png" width="500" height="500">
