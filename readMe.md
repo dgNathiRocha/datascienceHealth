@@ -48,7 +48,7 @@ From the images, we can see that the normal sample shows a small size of epithel
 
 <!-- Walk through the code  -->
 ## Walk through the code
-We firstly splitted into 70% of train set and 30% of train set for both classes.
+We firstly splitted into 70% of train set and 30% of test set for both classes.
 ```! pip install python_splitter
 import python_splitter
 python_splitter.split_from_folder("/tmp/Oral Cancer", train=0.7, test=0.3)
